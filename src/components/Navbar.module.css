@@ -1,0 +1,36 @@
+.nav_bar {
+    display: flex;
+    align-items: center;
+    height: 173px;
+    background-color: red;
+
+
+}
+.nav_bar_body{
+    flex: 1;
+    display: flex;
+    margin-left: 140px;
+    margin-right: 140px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    height: 67px;
+}
+
+.nav_bar_left{
+    background-color: aqua;
+}
+.nav_bar_center{
+background-color: pink;
+}
+
+.nav_bar_right{
+/* background-color: green; */
+}
+.navBarList{
+    display: inline-block;
+    justify-content: space-between;
+    list-style: none;
+    background-color: white;
+}
