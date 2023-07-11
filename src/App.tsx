@@ -1,12 +1,21 @@
 import React from 'react';
 import './App.css';
-import NavBar from './components/NavBar';
+import { BrowserRouter } from 'react-router-dom';
+import Header from './components/header/Header';
+import Main from './components/main/Main';
+import Login from './components/main/login/Login';
+
+
+
 
 function App() {
+
+  
   return (
-    <div className="App">
-     <NavBar/>
-    </div>
+    <BrowserRouter>
+    <Header/>
+     <Main/>
+    </BrowserRouter>
   );
 }
 

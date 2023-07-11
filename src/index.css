@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+  html {
+      font-size: 62.5%;
+  }
+  
+    @media (max-width: 768px) {
+      /* Apply styles for screens with width up to 768px */
+      .root {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+      }
+    }
+  
