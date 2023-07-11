@@ -1,0 +1,20 @@
+.container{
+    /* max-width: 120rem; */
+    padding: 3.2 3.2rem;
+    margin: 0 auto;
+}
+.how-we-are-different-box{
+    margin-top: 12rem;
+}
+
+.heading-text{
+    font-size: 6rem;
+    font-weight: 600;
+    color: #2E436A;
+    text-align: center;
+
+}
+
+.ellipse-box{
+
+}

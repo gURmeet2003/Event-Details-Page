@@ -1,0 +1,162 @@
+.login-container{
+    display: flex;
+    gap:2.8rem;
+}
+.left-body{
+    padding-left: 3.3rem;
+    margin: 2rem;
+    flex: 4;
+    align-self: stretch;
+    background-color: #6D87F5;
+    border-radius: 2rem;
+    padding-bottom: 6.4rem;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-right: 6rem;
+    gap: 1rem;
+}
+.dot{
+    border-radius: 50%;
+    background-color: white;
+    height: 10px;
+    width: 10px;
+}
+.right-body{
+    flex: 7;
+    margin: 10rem 5rem 12rem 0;
+    margin-right: 6.4rem;
+}
+
+.logo{
+    height: 2.4rem;
+    width: 18.8rem;
+    margin-top: 10rem;
+    filter: grayscale(100%) brightness(1000%);
+    color: white;
+}
+.left-body h2{
+    font-size: 5.1rem;
+    margin-right: 18rem;
+    margin-top: 8rem;
+    color: white;
+}
+.info{
+    margin-top: 4rem;
+    margin-right: 12rem;
+    font-size: 2rem;
+    color: #FFFFFF;
+    opacity: 0.8;
+    letter-spacing: 0px;
+}
+
+.login-text{
+    font-size: 4rem;
+    color: #2E436A;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.sign-up-button-box{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 4.6rem;
+}
+.dont-have-account{
+    font-size: 2rem;
+    color: #2E436A;
+}
+.sign-up-btn{
+    font-size: 2rem;
+    color: #6D87F5;
+    text-decoration: none;
+}
+.social-logins{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+.social-login{
+  border:1px solid #2E436A; 
+  border-radius: 2rem;
+  display: flex;
+  gap:1.8rem;
+  align-items: center;
+  padding: 2.8rem 5.3rem 2.8rem 5.3rem;
+}
+.google-logo{
+    height: 3.4rem;
+    width: 3.4rem;
+}
+.linkedin-logo{
+    height: 3.4rem;
+    width: 3.4rem;
+}
+.fb-logo{
+    height: 3.4rem;
+    width: 3.4rem;
+}
+.company-name{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.or-text{
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.input-label{
+    color: #2E436A;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2.4rem;
+}
+.input{
+    width: 100%;
+    height: 7rem;
+    margin-right: 4.6rem;
+    border-radius: 2rem;
+    border-width: 1px;
+    margin-bottom: 2.4rem;
+}
+.forgot-pass-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4.8rem;
+}
+.remember-me-box{
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+.remember-text{
+    font-size: 2rem;
+}
+.check-box{
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 1rem;
+    border-width: 1px;
+}
+.check-box:checked{
+    /* background-color: #6D87F5; */
+    background-color: red;
+}
+.forgot-password-btn{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #6D87F5;
+
+}
+.log-in-btn{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #6D87F5;
+    padding: 2rem 8rem 2rem 8rem;
+    border-radius: 2rem;
+}

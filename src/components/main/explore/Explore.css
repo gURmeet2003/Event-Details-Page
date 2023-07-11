@@ -1,0 +1,111 @@
+.container{
+    /* max-width: 120rem; */
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.explore{
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly between children */
+    align-items: center;
+    gap:2rem ;
+}
+.left-box{
+    display: flex;
+    flex: 6.4;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4.5rem;
+    
+}
+.dont-know-text-box{
+   display: inline-block;
+}
+.dont-know-text{
+    font-size: 9.2rem;
+    color: #2E436A;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0;
+    white-space: nowrap;
+    
+}
+.about-techbairn{
+    letter-spacing: 0;
+    line-height: 3.7rem;
+    width: 64.6rem;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #516FA7;
+}
+.mid-box{
+  flex: 5.4;
+
+}
+.clueless-girl-img{
+    max-width: 100%; /* Ensure the image does not exceed its container */
+    height: auto; /* Preserve the image's aspect ratio */
+    width: 100%;
+}
+.right-box{
+    flex: 4.3;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: 20rem;
+}
+.guided-learning-text{
+ font-size: 4.5rem;
+ font-weight: 500;
+ color: #2E436A;
+}
+.talk-to-consultant{
+    font-size: 2.5rem;
+    color: #516FA7;
+}
+.call-back-btn-box{
+    display: block;
+    width: 24rem;
+}
+.call-back-btn:link,call-back-btn:visited{
+    
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    white-space: nowrap;
+    gap: 1.8rem;
+    align-items: center;
+    background-color: #2FD18C;
+    padding: 2.2rem 1.8rem;
+    border-radius: 2rem;
+    transition: all 0.3s;
+   
+}
+.call-back-btn:hover,.call-back-btn:active{
+
+    background-color: #26a770;
+}
+
+.request-call-back-text{
+color: #fff;
+font-size: 2rem;
+}
+.phone-image{
+    width: 2.3rem;
+    height: 2.3rem;
+    filter: brightness(0) invert(1);
+}
+
+.explore-btn{ 
+    background-color: #6D87F5;
+    color: #fff;
+    text-decoration: none;
+    font-size: 3.3rem;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 2.2rem 7rem;
+}
+.explore-btn-box{
+   
+}
