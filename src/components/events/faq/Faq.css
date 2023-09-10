@@ -1,0 +1,23 @@
+.faq{
+    background-color: #F7FAFC;
+    padding-left: 14rem;
+    padding-right: 14rem;
+    padding-top:7.5rem;
+    padding-bottom:9rem;
+}
+
+.faq-headings{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.faq-head1{
+    font-size:6rem;
+    color: #2E436A;
+}
+.faq-accordion{
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+    margin-top:12rem;
+}

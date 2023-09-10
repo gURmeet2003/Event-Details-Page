@@ -1,0 +1,26 @@
+import React from 'react';
+import './Events.css';
+import StudentSaying from './studentssaying/StudentsSaying';
+import Upcoming from './upcoming/Upcoming';
+import AboutEvents from './about-events/AboutEvents';
+import Speaker from './about-speaker/AboutSpeaker';
+import Faq from './faq/Faq';
+import Help from './help/Help';
+
+
+
+const Events: React.FC = () => {
+    return (
+
+        <div className="events">
+            <Upcoming star={4} rating={5000} students={10000}/> 
+            <AboutEvents/>
+            <StudentSaying/>
+
+            <Speaker/>
+            <Faq/>
+            <Help/>
+        </div>
+    );
+}
+export default Events

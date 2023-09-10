@@ -1,0 +1,52 @@
+.abouteventscard-card{
+    display:flex;
+    flex-direction:column;
+    border-radius: 20px;
+    padding-bottom: 5rem;
+    border: 3px solid #FFFFFF;
+}
+.abouteventscard-card img{
+    height:auto;
+    max-width:7.6rem;
+    margin-left:3.1rem;
+    margin-top: 8rem;
+    margin-bottom:4.30rem;
+    /* border:1px solid red; */
+}
+.abouteventscard-card p{
+    color:#FFFFFF;
+    font-size:2.5rem;
+    margin-left:3.1rem;
+    margin-right:3.1rem;
+    /* border:1px solid red; */
+}
+
+@media (max-width:430px){
+    .abouteventscard-card img{
+        margin-right:20rem;
+        /* border:1px solid red; */
+    }
+    .abouteventscard-card p{
+        font-size:1.5rem;
+        margin-right:1rem;
+        /* border:1px solid red; */
+    }
+}
+@media (max-width:430px){
+    .abouteventscard-card p{
+        font-size:2.1rem;
+        margin-right:2.0rem;
+        /* border:1px solid red; */
+    }
+}
+@media (max-width:320px){
+    .abouteventscard-card img{
+        margin-right:12rem;
+        /* border:1px solid red; */
+    }
+    .abouteventscard-card p{
+        font-size:1.5rem;
+        margin-right:2.0rem;
+        /* border:1px solid red; */
+    }
+}

@@ -1,0 +1,121 @@
+.upcoming{
+    padding-right:5rem;
+    padding-left:5rem;
+    padding-bottom:4.5rem;
+    padding-top:4.8rem;
+    background-color:#F7FAFC;
+}
+.upcoming-content{
+    padding-top:9.1rem;
+    padding-bottom:9rem;
+    padding-left: 9.2rem;
+    border-radius: 20px;
+    background: #6D87F5 0% 0% no-repeat padding-box;
+    display: flex;
+}
+.upcoming-img{
+    /* border: 1px solid red; */
+    margin-right:4.2rem
+}
+.upcoming-img img{
+    right: 0;
+    max-width: 105%;
+    height: auto;
+      
+}
+.upcoming-info{
+    max-width: 99.3rem;
+}
+
+.upcoming-links{
+    display: flex;
+    flex-direction: row;
+    font-size:2rem;
+    align-items: center;
+}
+.upcoming-links a{
+    color: white; 
+    text-decoration: none;
+}
+.upcoming-paragraphs{
+    color:white;   
+}
+.upcoming-paragraphs-para1{
+    font-size:10rem;
+}
+.upcoming-paragraphs-para2{
+    margin-top: .9rem;
+    font-size:5rem;
+}
+.upcoming-paragraphs-para3{
+    font-size:2.5rem;
+    margin-top: 3.4rem;
+}
+
+.upcoming-ratings{
+    display: flex;
+    flex-direction: row;
+    gap:1.1rem; 
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.upcoming-stars{
+    background: #2E436A 0% 0% no-repeat padding-box;
+    color:white;
+    font-size: 2rem;
+    padding-left: 1.7rem;
+    padding-top: 0.9rem;
+    padding-right:1.6rem;
+    padding-bottom:1rem;
+    border: none;
+    display: flex;
+    align-items: center;justify-content: center;
+}
+.upcoming-stars p{
+    margin-left: 0.5rem;
+}
+.upcoming-best {
+    background: #2E436A 0% 0% no-repeat padding-box;
+    color:white;
+    font-size: 2rem;
+    padding-left: 1.2rem;
+    padding-top: 1.3rem;
+    padding-right:1.6rem;
+    padding-bottom:.9rem;
+    border: none;
+    align-items: center;
+}
+
+.upcoming-date{
+    color:white;
+    font-size: 2.5rem;
+}
+.upcoming-date p{
+    margin-top:1rem;
+}
+.upcoming-buttons{
+    display: flex;
+    gap:1.5rem;
+    margin-top: 3.5rem;
+    flex-wrap: wrap;
+}
+.upcoming-buttons-enroll{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 14px;
+    font-size: 2.6rem;
+    color: #6D87F5;
+    padding-left: 2.2rem;
+    padding-top: 1.5rem;
+    padding-right:2.1rem;
+    padding-bottom:1.6rem;
+    border:none;
+}
+
+.upcoming-buttons-enroll p{
+    display: inline;
+}
+.upcoming-buttons-strike{
+    margin-left: 0.5rem;
+    color:#6D87F5A8;
+    text-decoration: line-through;
+}
