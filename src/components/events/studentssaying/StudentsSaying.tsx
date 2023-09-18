@@ -1,9 +1,8 @@
 import React from 'react';
 import './StudentsSaying.css';
-import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from 'react-icons/md'
 import StudentSayingCard from './studentsayingcard/StudentSayingCard'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import SwiperCore, { Navigation } from "swiper";
 // import { Navigation } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
