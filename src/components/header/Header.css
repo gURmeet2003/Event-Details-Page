@@ -1,53 +1,215 @@
-.header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #FFFFFF;
+.header {
+  background-color: #ffffff;
   box-shadow: 0px 3px 6px #00000029;
   opacity: 1;
-  padding: 4rem 6rem 4rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: hidden;
   margin-bottom: 5px;
-  
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  overflow: visible;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  z-index: 22;
 }
-.logo{
-  height: 3.5rem;
+.logo {
+  height: 3rem;
+  width: fit-content;
 }
-.main-nav{
-/* /background-color: #FFFFFF; */
+.open-nav {
+  cursor: pointer;
 }
-
-.nav-bar{
+.open-nav img {
+  height: 3rem;
+}
+.main-nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100svh;
+  background-color: #ffffff;
+  transition: 0.3s;
+  overflow: visible;
+}
+.main-nav.open {
+  width: 70%;
+  padding: 10px 0 10px 25px;
+}
+.trans-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100svh;
+  width: 0;
+  background-color: #00000095;
+}
+.trans-box.open {
+  width: 50%;
+}
+.close-nav {
+  cursor: pointer;
+  font-size: 0;
+  color: #2e436a;
+  height: 10%;
   display: flex;
-}
-
-.nav-list{
-  display: flex;
-  list-style: none;
-  font-size: 3rem;
-  gap: 3rem;
-  justify-content: space-between;
   align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  width: 100%;
+  overflow: hidden;
 }
-.nav-list-item{
-  color: #2E436A;
-  text-decoration: none;
+.close-nav.open {
+  font-size: 5rem;
 }
-.authenticate{
+.nav-list {
+  width: 100%;
+  height: 80%;
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 50px;
+}
+.nav-list li {
+  list-style-type: none;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: #2e436a;
+  font-size: 2rem;
+}
+.authenticate {
+  height: 10%;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 15px;
+  margin-left: 5rem;
 }
-.sign-up{
-  color: #6D87F5;
-  font-size: 3rem;
+.authenticate a {
+  font-size: 2rem;
   text-decoration: none;
+  font-weight: bold;
 }
-.log-in{
-  color: #FFFFFF;
-  text-decoration: none;
-  background-color: #6D87F5;
-  font-size: 3rem;
+.authenticate a.sign-up {
+  color: #6d87f5;
+}
+.authenticate a.log-in {
+  color: #ffffff;
+  background-color: #6d87f5;
   border-radius: 2rem;
-  padding: 1.3rem 5rem 1.8rem 5rem;
+  padding: 0.8rem 3rem 1.3rem 3rem;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-left: 7rem;
+  }
+  .open-nav {
+    display: none;
+  }
+  .logo {
+    width: 20%;
+    height: auto;
+  }
+  .main-nav {
+    position: initial;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 3rem;
+  }
+  .main-nav li {
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .main-nav li a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .main-nav li a:hover {
+    color: #6d87f5;
+    border-bottom: 5px solid #6d87f5;
+    transition: 0.1s ease;
+  }
+  .trans-box {
+    display: none;
+  }
+  .close-nav {
+    display: none;
+  }
+  .nav-list {
+    width: 70%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2px;
+  }
+  .nav-list li a {
+    font-size: 1.5rem;
+  }
+  .authenticate {
+    height: 100%;
+    width: fit-content;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .authenticate a {
+    font-size: 1.5rem;
+  }
+  .authenticate a.log-in {
+    padding: 0.6rem 1.5rem 1.1rem 1.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .header {
+    padding-left: 140px;
+    padding-right: 100px;
+  }
+  .logo {
+    height: 3rem;
+    width: fit-content;
+  }
+  .main-nav {
+    justify-content: space-between;
+    padding: 0;
+  }
+  .authenticate {
+    gap: 5rem;
+  }
+  .nav-list li a,
+  .authenticate a {
+    font-size: 2rem;
+  }
+  .authenticate a.log-in {
+    padding: 1rem 2rem 1.3rem 2rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .authenticate {
+    
+    height: auto;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 767px){
+    .logo{
+      height: 1rem;
+    }
 }

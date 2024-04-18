@@ -1,47 +1,76 @@
-import React, { CSSProperties, useState } from "react";
-import   './Header.css';
-import logo from '../../assets/Logo.png'
+import "./Header.css";
+import logo from "../../assets/Logo.png";
+import hamburger from "../../assets/hamburger.png";
 import { NavLink } from "react-router-dom";
 
+import { useRef, useState, useEffect } from "react";
 
+function Header() {
+  const [navOpen, setNavOpen] = useState(false);
 
-interface HeaderProps {
+  const transRef = useRef<HTMLDivElement>(null);
+  const closeNavRef = useRef<HTMLDivElement>(null);
+  const mainNav = useRef<HTMLDivElement>(null);
 
-}
-
-
-
-const Header: React.FC<HeaderProps> = () => {
-
-    const [menuOpen, setMenuOpen] = useState<boolean>(false);
-
-    function toggleMenu() {
-      setMenuOpen(!menuOpen);
+  useEffect(() => {
+    if (navOpen) {
+      transRef.current?.classList.add("open");
+      closeNavRef.current?.classList.add("open");
+      mainNav.current?.classList.add("open");
+    } else {
+      transRef.current?.classList.remove("open");
+      closeNavRef.current?.classList.remove("open");
+      mainNav.current?.classList.remove("open");
     }
-
-    const logInClick = () =>{
-      console.log("Logging In")
-    }
-
-    return (
-      <header className="header">
-        <img className="logo" src={logo} alt="Techbairn logo"/>
-        <nav className="main-nav">
-          <ul className="nav-list">
-            <li><NavLink className="nav-list-item"  to="/programs">programs</NavLink></li>
-            <li><NavLink className="nav-list-item" to="/campus-associate">campus associate</NavLink></li>
-            <li><NavLink className="nav-list-item" to="/refer">refer & earn</NavLink></li>
-            <li><NavLink className="nav-list-item" to="/more">more</NavLink></li>
-          </ul>
-        </nav>
-        <div className="authenticate">
-        <NavLink className="sign-up" to="/sign-up">Sign Up</NavLink>
-        <NavLink className="log-in" to="/log-in">Log In</NavLink>
+  }, [navOpen]);
+  return (
+    <header className="header">
+      <img className="logo" src={logo} alt="Techbairn logo" />
+      <div className="open-nav" onClick={() => setNavOpen(true)}>
+        <img src={hamburger} alt="hamburger" />
+      </div>
+      <div className="trans-box" ref={transRef}></div>
+      <nav className="main-nav open" ref={mainNav}>
+        <div
+          className="close-nav open"
+          onClick={() => setNavOpen(false)}
+          ref={closeNavRef}
+        >
+          &times;
         </div>
-    
-      </header>
-       
-    );
-};
+        <ul className="nav-list">
+          <li>
+            <NavLink className="nav-list-item" to="/programs">
+              programs
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-list-item" to="/campus-associate">
+              campus associate
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-list-item" to="/refer">
+              refer & earn
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-list-item" to="/more">
+              more <span aria-hidden="true">↓</span>
+            </NavLink>
+          </li>
+        </ul>
+        <div className="authenticate">
+          <NavLink className="sign-up" to="/sign-up">
+            Sign Up
+          </NavLink>
+          <NavLink className="log-in" to="/log-in">
+            Log In
+          </NavLink>
+        </div>
+      </nav>
+    </header>
+  );
+}
 
 export default Header;

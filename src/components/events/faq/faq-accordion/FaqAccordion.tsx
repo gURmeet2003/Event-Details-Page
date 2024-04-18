@@ -1,7 +1,6 @@
 import React from "react";
 import './FaqAccordion.css';
 import { useState } from 'react';
-import {SlArrowDown,SlArrowUp} from 'react-icons/sl'
 
 interface props {
     title: string,
@@ -25,7 +24,7 @@ const FaqAccordion: React.FC<props> = (props) => {
                     onClick={() => setIsActive(!isActive)}
                 >
                     <div className="faqaccordion-question">{props.title}</div>
-                    <div className="faqaccordion-plus-minus">{isActive ? <SlArrowDown size={50} color="#2E436A"/> : <SlArrowUp size={50} color="#2E436A"/>}</div>
+                    <div className="faqaccordion-plus-minus">{isActive ? '-' : '+'}</div>
                 </div>
                 {isActive && <div className="faqaccordion-content">{props.content}</div>}
             </div>

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'VisbyRoundCF-Bold';
+    src: url('./VisbyRoundCF-Bold.otf') format('opentype');
+    
+  }
+
+  @font-face {
+    font-family: 'VisbyRoundCF-DemiBold';
+    src: url('./VisbyRoundCF-DemiBold.otf') format('opentype');
+    
+  }
+
+  @font-face {
+    font-family: 'VisbyRoundCF-ExtraBold';
+    src: url('./VisbyRoundCF-ExtraBold.otf') format('opentype');
+   
+  }
+
+  @font-face {
+    font-family: 'VisbyRoundCF-ExtraLight';
+    src: url('./VisbyRoundCF-ExtraLight.otf') format('opentype');
+   
+  }
+  @font-face {
+    font-family: 'VisbyRoundCF-Heavy';
+    src: url('./VisbyRoundCF-Heavy.otf') format('opentype');
+    
+  }
+  @font-face {
+    font-family: 'VisbyRoundCF-Light';
+    src: url('./VisbyRoundCF-Light.otf') format('opentype');
+   
+  }
+  @font-face {
+    font-family: 'VisbyRoundCF-Medium';
+    src: url('./VisbyRoundCF-Medium.otf') format('opentype');
+    
+  }
+  @font-face {
+    font-family: 'VisbyRoundCF-Regular';
+    src: url('./VisbyRoundCF-Regular.otf') format('opentype');
+    
+  }
+
